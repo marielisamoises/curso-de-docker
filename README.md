@@ -2,6 +2,8 @@
 curso de docker e docker compose feito pela Alura!
 
 Anotações:
+
+
 docker version - exibe a versão do docker.
 docker run NOME_DA_IMAGEM - cria um container com a respectiva imagem
 docker ps - exibe todos os containers que estao ativos no momento
@@ -51,7 +53,7 @@ docker ps -q - lista só os ids
 
 docker stop $(docker ps -q) - lista os ids e mata os containers na sequencia
 
-========================================================
+
 docker ps - exibe todos os containers em execução no momento.
 docker ps -a - exibe todos os containers, independentemente de estarem em execução ou não.
 docker run -it NOME_DA_IMAGEM - conecta o terminal que estamos utilizando com o do container.
@@ -64,7 +66,7 @@ docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.
 docker run -d -P --name NOME dockersamples/static-site - ao executar, dá um nome ao container.
 docker run -d -p 12345:80 dockersamples/static-site - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
 docker run -d -P -e AUTHOR="Fulano" dockersamples/static-site - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.
-=================================================================
+
 
 Aula 3  
 Container são voláteis: Onde salvar o código? Logs? Dados? - Nos volumes!
@@ -124,14 +126,13 @@ dd5af70cd2a1        bridge              bridge              local
 
 docker run -it --name ubuntu-container --network my-network ubuntu - cria um container de ubuntu interativo dentro de uma rede especifica
 
-=================================================
 Aula 5
 docker pull douglasq/alura-books:cap05 - baixando a imagem publica do prof para o exercicio de comunicação entre containers
 docker pull mongo
 
 docker network inspect my-network - consigo ver os containers na minha rede "my-network"
 
-===================================================
+
 Aula 6
 Porque usar o docker compose:
 - quando tenho + de 1 container
