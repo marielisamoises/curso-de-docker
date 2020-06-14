@@ -1,4 +1,4 @@
-# curso-de-docker
+# Curso de Docker e Docker-compose
 curso de docker e docker compose feito pela Alura!
 
 Anotações:
